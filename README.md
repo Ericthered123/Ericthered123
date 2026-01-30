@@ -1,3 +1,6 @@
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0e75b6,100:0a192f&height=220&section=header&text=Eric%20Doyle&fontSize=50&fontColor=ffffff&desc=Backend%20%7C%20Tech%20Enthusiast%20%7C%20CS%20EngStudent(4th)&descSize=20&descAlignY=65)
+
+
 # 💫 About Me:
 🔭 I’m currently working on  <br>Backend services and data processing pipelines using Java(SpringBoot) and Python, with PostgreSQL/PostGIS or other DBs, Docker and Apache Spark.  <br>Focused on building reliable APIs, background processing, and scalable data workflows for geospatial and data-intensive systems.<br>Also an enthusiast and passionate about projects regarding microcontrollers such as Arduino or ESP32 <br><br>👯 I’m looking to collaborate on  <br>Backend, data engineering or infrastructure projects — especially those involving Big Data, distributed processing (Spark), containerized environments, or open-source tooling.<br><br>🤝 I’m looking for help with  <br>Improving system design decisions, scalability patterns, Spark performance tuning, and best practices around data pipelines, observability and cloud-native architectures.<br><br><br>🌱 I’m currently learning  <br>Apache Spark in depth, Big Data architectures, Python for data processing, Kubernetes fundamentals, and how to design systems that scale without becoming unmaintainable.<br>Also learning Terraform,Jsonnet, and Raspberry PI<br><br>💬 Ask me about  <br>Java, Python, Linux (Ubuntu 🐧), Docker, PostgreSQL/PostGIS, Spark,data pipelines, Grafana dashboards, or why “it works on my machine” is not a production strategy.<br><br>⚡ Fun fact  <br>I like digging into problems until I understand *why* they work — which usually results in multiple terminals, a Jupyter notebook, and a Grafana dashboard open at the same time.<br>
 
@@ -30,5 +33,7 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ericthered123&color=blue"/>
 </p>
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=120&section=footer)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
