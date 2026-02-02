@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360">
+<image id="frame0" href="frames/frame_000.png" width="480" height="360" visibility="visible"/>
+<image id="frame1" href="frames/frame_001.png" width="480" height="360" visibility="hidden"/>
+<image id="frame2" href="frames/frame_002.png" width="480" height="360" visibility="hidden"/>
+<image id="frame3" href="frames/frame_003.png" width="480" height="360" visibility="hidden"/>
+<image id="frame4" href="frames/frame_004.png" width="480" height="360" visibility="hidden"/>
+<image id="frame5" href="frames/frame_005.png" width="480" height="360" visibility="hidden"/>
+<image id="frame6" href="frames/frame_006.png" width="480" height="360" visibility="hidden"/>
+<image id="frame7" href="frames/frame_007.png" width="480" height="360" visibility="hidden"/>
+<image id="frame8" href="frames/frame_008.png" width="480" height="360" visibility="hidden"/>
+<image id="frame9" href="frames/frame_009.png" width="480" height="360" visibility="hidden"/>
+<image id="frame10" href="frames/frame_010.png" width="480" height="360" visibility="hidden"/>
+<image id="frame11" href="frames/frame_011.png" width="480" height="360" visibility="hidden"/>
+<image id="frame12" href="frames/frame_012.png" width="480" height="360" visibility="hidden"/>
+<image id="frame13" href="frames/frame_013.png" width="480" height="360" visibility="hidden"/>
+<animate attributeName="visibility" values="visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;hidden;visible" dur="1400ms" repeatCount="indefinite"/>
+</svg>
