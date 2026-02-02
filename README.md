@@ -27,7 +27,7 @@
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Ericthered123/Ericthered123/main/assets/kittycomputer.svg" width="400"/>
+  <img src="https://raw.githubusercontent.com/Ericthered123/Ericthered123/main/assets/kittycomputer.gif" width="400"/>
 </p>
 
 <p align="center">
