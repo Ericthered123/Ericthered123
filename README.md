@@ -39,6 +39,6 @@
 
 ## Snake Contributions
 
-![Snake Contributions](https://github.com/Ericthered123/Ericthered123/blob/snake-branch/snake_contributions.svg)
+![Snake Contributions](snake_contributions.svg)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
