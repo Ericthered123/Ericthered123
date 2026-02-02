@@ -38,20 +38,29 @@ jobs:
               im.save(frame_path)
           EOF
 
-      # 5) Generar SVG animado
+      # 5) Generar SVG animado con base64
       - run: |
           python - <<'EOF'
-          import os
+          import os, base64
+          from PIL import Image
+
           FRAME_DIR = "frames"
           OUTPUT_SVG = "assets/kittycomputer.svg"
           FRAME_DURATION = 100  # ms
+
           frames = sorted([f for f in os.listdir(FRAME_DIR) if f.endswith(".png")])
-          from PIL import Image
           im0 = Image.open(os.path.join(FRAME_DIR, frames[0]))
           width, height = im0.size
+
           svg_content = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">\n'
+
+          # Convertir cada frame a base64 e incrustarlo
           for i, frame in enumerate(frames):
-              svg_content += f'<image id="frame{i}" href="{FRAME_DIR}/{frame}" width="{width}" height="{height}" visibility="{"visible" if i==0 else "hidden"}"/>\n'
+              with open(os.path.join(FRAME_DIR, frame), "rb") as f:
+                  b64 = base64.b64encode(f.read()).decode("ascii")
+              svg_content += f'<image id="frame{i}" href="data:image/png;base64,{b64}" width="{width}" height="{height}" visibility="{"visible" if i==0 else "hidden"}"/>\n'
+
+          # Animación
           svg_content += '<animate attributeName="visibility" values="'
           values = []
           for i in range(len(frames)):
@@ -59,9 +68,12 @@ jobs:
                   values.append("visible" if i==j else "hidden")
           svg_content += ";".join(values)
           svg_content += f'" dur="{FRAME_DURATION*len(frames)}ms" repeatCount="indefinite"/>\n'
+
           svg_content += '</svg>'
+
           with open(OUTPUT_SVG, "w") as f:
               f.write(svg_content)
+
           print(f"SVG animado generado: {OUTPUT_SVG}")
           EOF
 
