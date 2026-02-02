@@ -23,7 +23,7 @@ jobs:
         run: pip install -r snake_contributions/requirements.txt
 
       - name: Run Snake GIF Script
-        run: python snake_contributions/snake_gif.py
+        run: python snake_contributions/snake.py
 
       - name: Commit and Push GIF
         run: |
