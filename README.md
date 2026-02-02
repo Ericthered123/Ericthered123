@@ -39,6 +39,6 @@
 
 ## Snake Contributions
 
-![Snake Contributions](snake_contributions.svg)
+![Snake Contributions](snake_contributions.gif)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
