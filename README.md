@@ -39,6 +39,6 @@
 
 ## Snake Contributions
 
-![Snake Contributions](snake_contributions.gif)
+![GitHub snake](output/github-snake.svg)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
