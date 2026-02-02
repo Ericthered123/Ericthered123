@@ -36,4 +36,9 @@
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=120&section=footer)
 
+
+## Snake Contributions
+
+![Snake Contributions](snake_contributions.svg)
+
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
