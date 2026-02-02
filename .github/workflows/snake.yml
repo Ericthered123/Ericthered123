@@ -1,5 +1,6 @@
 name: Generate Snake game
-
+permissions:
+  contents: write
 on:
   schedule:
     - cron: '0 0 * * *'  # corre una vez al día
