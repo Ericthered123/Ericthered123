@@ -2,11 +2,11 @@ name: Update Snake Contributions
 
 permissions:
   contents: write
-  
+
 on:
   schedule:
     - cron: '0 * * * *'   # cada hora
-  workflow_dispatch:       # también manual
+  workflow_dispatch:
 
 jobs:
   generate-snake:
