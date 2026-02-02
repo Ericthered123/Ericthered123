@@ -1,0 +1,74 @@
+name: Generate Kitty SVG
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # opcional: corre cada día a medianoche
+
+permissions:
+  contents: write
+
+jobs:
+  convert-gif-to-svg:
+    runs-on: ubuntu-latest
+    steps:
+      # 1) Checkout repo
+      - uses: actions/checkout@v4
+
+      # 2) Instalar Python y Pillow
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install pillow
+
+      # 3) Crear directorio temporal para frames
+      - run: mkdir frames
+
+      # 4) Extraer frames del GIF
+      - run: |
+          python - <<'EOF'
+          from PIL import Image
+          import os
+          gif_path = "assets/kittycomputer.gif"
+          im = Image.open(gif_path)
+          frame_dir = "frames"
+          for i, frame in enumerate(range(im.n_frames)):
+              im.seek(i)
+              frame_path = os.path.join(frame_dir, f"frame_{i:03d}.png")
+              im.save(frame_path)
+          EOF
+
+      # 5) Generar SVG animado
+      - run: |
+          python - <<'EOF'
+          import os
+          FRAME_DIR = "frames"
+          OUTPUT_SVG = "assets/kittycomputer.svg"
+          FRAME_DURATION = 100  # ms
+          frames = sorted([f for f in os.listdir(FRAME_DIR) if f.endswith(".png")])
+          from PIL import Image
+          im0 = Image.open(os.path.join(FRAME_DIR, frames[0]))
+          width, height = im0.size
+          svg_content = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">\n'
+          for i, frame in enumerate(frames):
+              svg_content += f'<image id="frame{i}" href="{FRAME_DIR}/{frame}" width="{width}" height="{height}" visibility="{"visible" if i==0 else "hidden"}"/>\n'
+          svg_content += '<animate attributeName="visibility" values="'
+          values = []
+          for i in range(len(frames)):
+              for j in range(len(frames)):
+                  values.append("visible" if i==j else "hidden")
+          svg_content += ";".join(values)
+          svg_content += f'" dur="{FRAME_DURATION*len(frames)}ms" repeatCount="indefinite"/>\n'
+          svg_content += '</svg>'
+          with open(OUTPUT_SVG, "w") as f:
+              f.write(svg_content)
+          print(f"SVG animado generado: {OUTPUT_SVG}")
+          EOF
+
+      # 6) Commit y push al repo
+      - run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/kittycomputer.svg
+          git commit -m "Update Kitty SVG" || echo "No changes"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
