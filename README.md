@@ -27,7 +27,7 @@
 
 
 <p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTZwc2txOW40ZGExeDVyYmwzNDUzdDNmZnA0ZnVmbWxsZm9hNHk1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HBDT4QSTpveU/giphy.gif" width="400"/>
+  <img src="https://raw.githubusercontent.com/Ericthered123/Ericthered123/main/assets/hacker.gif" width="400"/>
 </p>
 
 <p align="center">
