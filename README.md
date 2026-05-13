@@ -1,4 +1,4 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0e75b6,100:0a192f&height=220&section=header&text=Eric%20Doyle&fontSize=50&fontColor=ffffff&desc=Backend%20%7C%20Tech%20Enthusiast%20%7C%20CS%20EngStudent(4th)&descSize=20&descAlignY=65)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:ff5733,100:0a192f&height=220&section=header&text=Eric%20Doyle&fontSize=50&fontColor=ffffff&desc=Backend%20%7C%20Tech%20Enthusiast%20%7C%20CS%20EngStudent(4th)&descSize=20&descAlignY=65)
 
 
 # 💫 About Me:
@@ -34,7 +34,7 @@
   <img src="https://komarev.com/ghpvc/?username=ericthered123&color=blue"/>
 </p>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0a192f&height=120&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=ff5733&height=120&section=footer)
 
 
 ## Snake Contributions
