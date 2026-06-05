@@ -1,22 +1,22 @@
- name: Generate Languages Chart
+name: Generate Languages Chart
 
-    on:
-      schedule:
-        - cron: "0 0 * * *"
-      workflow_dispatch:
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
-    jobs:
-      github-metrics:
-        runs-on: ubuntu-latest
-        permissions:
-          contents: write
-        steps:
-          - uses: lowlighter/metrics@latest
-            with:
-              filename: languages-chart.svg
-              token: ${{ secrets.GITHUB_TOKEN }}
-              base: ""
-              plugin_languages: yes
-              plugin_languages_limit: 8
-              plugin_languages_ignored: html, css, jupyter notebook
-              plugin_languages_details: bytes-size, percentage
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: languages-chart.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_ignored: html, css, jupyter notebook
+          plugin_languages_details: bytes-size, percentage
