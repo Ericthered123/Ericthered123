@@ -16,6 +16,7 @@
 ![](https://github-readme-stats.vercel.app/api?username=ericthered123&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=ericthered123&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ericthered123&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ericthered123&theme=dark)
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=ericthered123&theme=dark&no-frame=true&no-bg=true&margin-w=4)
